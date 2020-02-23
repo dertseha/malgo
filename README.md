@@ -7,7 +7,7 @@
 
 Go bindings for [mini_al](https://github.com/dr-soft/mini_al), mini audio library.
 
-Requires `cgo` but does not require linking to anything on the Windows/macOS and it links only `-ldl` on Linux.
+Requires `cgo` but does not require linking to anything on the Windows/macOS and it links only `-ldl` on Linux/BSDs.
 
 ### Installation
 
@@ -15,12 +15,12 @@ Requires `cgo` but does not require linking to anything on the Windows/macOS and
 
 ### Documentation
 
-Documentation on [GoDoc](https://godoc.org/github.com/gen2brain/malgo). Also check [examples](https://github.com/gen2brain/malgo/tree/master/examples).
+Documentation on [GoDoc](https://godoc.org/github.com/gen2brain/malgo). Also check [examples](https://github.com/gen2brain/malgo/tree/master/_examples).
 
 ### Platforms
 
 * Windows (WASAPI, DirectSound, WinMM)
 * Linux (PulseAudio, ALSA, JACK)
-* FreeBSD/NetBSD/OpenBSD (OSS)
+* FreeBSD/NetBSD/OpenBSD (OSS/audio(4)/sndio)
 * macOS (CoreAudio)
 * Android (OpenSL|ES)
